@@ -15,7 +15,7 @@ import java.util.List;
  * @author Administrator
  * @version 1.0
  **/
-@Service
+//@Service
 public class SpringDataUserDetailsService implements UserDetailsService {
 
     @Autowired

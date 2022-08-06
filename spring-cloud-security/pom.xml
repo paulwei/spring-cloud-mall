@@ -29,6 +29,11 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
+        <!-- 以下是>spring jdbc依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
 
         <!-- 以下是jsp依赖-->
         <dependency>
@@ -64,10 +69,7 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
+
 
         <dependency>
             <groupId>mysql</groupId>
