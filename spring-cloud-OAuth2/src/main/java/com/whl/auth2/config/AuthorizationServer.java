@@ -16,6 +16,7 @@ import javax.annotation.Resource;
  * @version 1.0
  * 授权服务配置
  * localhost:8500/sso/oauth/token
+ * http://localhost:8500/sso/oauth/authorize?client_id=web&response_type=code
  **/
 @Configuration
 @EnableAuthorizationServer
@@ -38,6 +39,7 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
                 .secret(encoder.encode("654321"))      //只与客户端分享的secret，随便写，但是注意要加密
                 .autoApprove(false)    //自动审批，这里关闭，要的就是一会体验那种感觉
                 .scopes("admin", "user")     //授权范围，这里我们使用全部all
+                .redirectUris("https://www.baidu.com/")
                 .authorizedGrantTypes("client_credentials", "password", "implicit", "authorization_code", "refresh_token");
         //授权模式，一共支持5种，除了之前我们介绍的四种之外，还有一个刷新Token的模式
         //这里我们直接把五种都写上，方便一会实验，当然各位也可以单独只写一种一个一个进行测试
