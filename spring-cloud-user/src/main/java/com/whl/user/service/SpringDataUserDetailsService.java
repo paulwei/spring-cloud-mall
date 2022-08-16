@@ -1,13 +1,12 @@
-package com.whl.sec.service;
+package com.whl.user.service;
 
-import com.whl.sec.dao.UserDao;
-import com.whl.sec.model.UserDto;
+import com.whl.user.dao.UserDao;
+import com.whl.user.model.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

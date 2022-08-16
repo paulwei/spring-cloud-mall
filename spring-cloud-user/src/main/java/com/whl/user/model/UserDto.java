@@ -1,4 +1,4 @@
-package com.whl.sec.model;
+package com.whl.user.model;
 
 import lombok.Data;
 

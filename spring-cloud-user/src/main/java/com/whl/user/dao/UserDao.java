@@ -1,7 +1,7 @@
-package com.whl.sec.dao;
+package com.whl.user.dao;
 
-import com.whl.sec.model.PermissionDto;
-import com.whl.sec.model.UserDto;
+import com.whl.user.model.PermissionDto;
+import com.whl.user.model.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
