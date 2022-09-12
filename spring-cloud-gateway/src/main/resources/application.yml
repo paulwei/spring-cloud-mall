@@ -4,7 +4,7 @@ spring:
   profiles:
     active: dev
   application:
-    name: micro-oauth2-gateway
+    name: spring-cloud-gateway
   cloud:
     nacos:
       discovery:
@@ -12,13 +12,13 @@ spring:
     gateway:
       routes: #配置路由路径
         - id: oauth2-api-route
-          uri: lb://micro-oauth2-api
+          uri: lb://spring-cloud-api
           predicates:
             - Path=/api/**
           filters:
             - StripPrefix=1
         - id: oauth2-auth-route
-          uri: lb://micro-oauth2-auth
+          uri: lb://spring-cloud-oauth2
           predicates:
             - Path=/auth/**
           filters:
