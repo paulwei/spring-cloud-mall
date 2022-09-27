@@ -22,6 +22,7 @@
         <module>spring-cloud-oauth2</module>
         <module>spring-cloud-gateway</module>
         <module>spring-oauth-api</module>
+        <module>spring-cloud-rfid</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->
